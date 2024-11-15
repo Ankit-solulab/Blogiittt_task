@@ -1,0 +1,42 @@
+h1 {
+    color: #EC8305;
+    text-align: center;
+    margin-top: 20px;
+}
+
+a {
+    color: #024CAA;
+    margin: 0 10px;
+}
+
+a:hover {
+    text-decoration: underline;
+}
+
+h2 {
+    color: #091057;
+}
+
+p {
+    font-size: 0.9rem;
+    color: #333;
+}
+
+.blog-container {
+    max-width: 800px;
+    margin: 20px auto;
+    background-color: #ffffff;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.blog-container h2 {
+    margin: 0;
+    font-size: 1.5rem;
+}
+
+.blog-container p {
+    margin: 10px 0;
+    font-size: 1rem;
+}

@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Blogiittt</title>
+    <link rel="stylesheet" href="/css/admin-style.css">
+</head>
+<body>
+    <h1>Welcome to Blogiittt</h1>
+    <% if (user) { %>
+        <a href="/users/logout">Logout</a>
+        <a href="/blogs/create">Create New Blog</a>
+    <% } else { %>
+        <a href="/users/signup">Signup</a>
+        <a href="/users/login">Login</a>
+    <% } %>
+    
+    <% blogs.forEach(blog => { %>
+        <h2><a href="/blogs/<%= blog._id %>"><%= blog.title %></a></h2>
+        <p>Author: <%= blog.author %></p>
+        <p>Likes: <%= blog.likes %></p>
+    <% }) %>
+</body>
+</html>
+
